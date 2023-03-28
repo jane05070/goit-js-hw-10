@@ -47,6 +47,7 @@ function onCountryInput() {
     })
     //   Ловимо помилку при вводі
     .catch(ifWrongNameAlert);
+    
   
 }
 
