@@ -46,9 +46,16 @@ function onCountryInput() {
       }
     })
     //   Ловимо помилку при вводі
-    .catch(ifWrongNameAlert);
+    .catch(error => {
+      if (error.message = 404) {
+        ifWrongNameAlert();
+        countryInput.value = '';
+        
+
+    }
+    })
     
-  
+    
 }
 
 // Функція для алерта, якщо більше 10 співпадбнь
